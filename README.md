@@ -1,3 +1,3 @@
 # portfolio-page
-npm run dev <br>
+<br>
 (development in progress.....)
