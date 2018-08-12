@@ -1,0 +1,18 @@
+// variables for poly-fluid-sizing mixin
+
+/* *************** hero section *************** */
+$hero-padding-top: (20em: 6em, 26em: 7em, 80em:9em, 100em: 11em);
+$hero-padding-bottom: (20em: 6em, 26em: 7em, 80em:9em, 100em: 11em);
+// $hero-margin: ();
+
+/* *************** hero-text section *************** */
+$hero-h1: (320px:35px, 450px: 40px, 768px: 45px, 992px: 55px, 1024px:65px);
+$hero-p: (320px:15px, 450px: 20px, 768px: 25px);
+
+/* *************** portfolio section *************** */
+$port-h2-lg: (20em: 1.1em, 41.24em: 1.2em, 41.25em: 1.5em, 60em: 2em);
+$port-p-lg: (20em: 0.9em, 41.24em: 1em, 41.25em: 1.1em, 60em: 1.3em);
+$port-link-lg: (20em: 0.8em, 41.24em: 0.9em, 41.25em: 1em, 60em: 1.2em);
+$port-h2: (20em: 1.1em, 41.24em: 1.2em, 41.25em: 1.21em, 60em: 1.25em);
+$port-p: (20em: 0.9em, 41.24em: 1em, 41.25em: 1.05em, 60em: 1.1em);
+$port-link: (20em: 0.8em, 41.24em: 0.9em, 41.25em: 0.92em, 60em: 0.95em);
