@@ -9,14 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     Disable link highlighting upon tap in IE10
-    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Set a default page for your Pinned Site -->
     <meta name="msapplication-starturl" content="https://www.pavlospapadopoulos.com/index.html?pinned=true">
-
-    <!-- TEMP CSS -->
-
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>
@@ -29,6 +25,7 @@
             ga('send', 'pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 
 <body id="top">
@@ -165,15 +162,15 @@
                 <form action="https://formspree.io/pavlospapadopou@gmail.com" method="POST">
                     <label class="name">
                         <span>Name:</span>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </label>
                     <label class="email">
                         Email:
-                        <input type="email" id="email" name="_replyto">
+                        <input type="email" id="email" name="_replyto" required>
                     </label>
                     <label message="message" class="message">
                         Message:
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" required></textarea>
                     </label>
                     <input type="submit" value="SEND" class="button form-button">
                 </form>

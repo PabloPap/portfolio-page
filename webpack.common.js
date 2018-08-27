@@ -72,9 +72,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin('dist', {} ),
-    new MiniCssExtractPlugin({
-        filename: 'style.css'
-      }),
     new FaviconsWebpackPlugin('./src/img/logo-img.png'),
     new HtmlWebpackPlugin({
         inject: false,
@@ -82,7 +79,10 @@ module.exports = {
         template: './src/index.html',
         // filename: 'index.html'
     }),
-    new WebpackMd5Hash(),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
+    // new WebpackMd5Hash(),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
