@@ -4,6 +4,7 @@
 @import 'normalize/normalize';
 @import 'poly-fluid-sizing';
 @import 'mixins';
+
 html,
 body {
     height: 100%;
@@ -43,6 +44,7 @@ a {
     left: 0;
     right: 0;
     margin: 0 auto;
+
     .logo-link {
         text-align: left;
         background: transparent;
@@ -52,18 +54,22 @@ a {
         // margin-left: 10em;
         color: #fff;
         width: 13rem;
+
         .icon {
-            margin:5px 10px 5px 0;
+            margin: 5px 10px 5px 0;
         }
+
         .name {
             text-transform: uppercase;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             .name-full {
                 font-size: 1rem;
                 letter-spacing: 1px;
             }
+
             .name-prof {
                 border-top: 1px solid rgb(49, 49, 49);
                 padding-top: 5px;
@@ -73,6 +79,7 @@ a {
             }
         }
     }
+
     .nav {
         position: absolute;
         text-align: center;
@@ -82,19 +89,23 @@ a {
         transform: scale(1, 0);
         transform-origin: top;
         transition: transform 400ms ease-in-out;
+
         .nav-ul {
             margin: 0;
             padding: 0;
             list-style: none;
+
             li {
                 margin-bottom: 3em;
                 margin-top: 3em;
+
                 a {
                     color: #fff;
                     font-size: 1.2rem;
                     text-transform: uppercase;
                     opacity: 0;
                     transition: opacity 150ms ease-in-out;
+
                     &:hover {
                         color: red;
                     }
@@ -102,26 +113,31 @@ a {
             }
         }
     }
+
     .nav-toggle {
         display: none;
     }
+
     .nav-toggle:checked~nav {
         transform: scale(1, 1);
         background: rgba(0, 0, 0, 0.9);
+
         li a {
             color: red;
             opacity: 1;
             transition: opacity 250ms ease-in-out 250ms;
         }
     }
+
     .nav-toggle-label {
         position: absolute;
         top: 0;
-        right:0;
+        right: 0;
         margin-right: 1em;
         height: 100%;
         display: flex;
         align-items: center;
+
         span,
         span::before,
         span::after {
@@ -132,14 +148,17 @@ a {
             border-radius: 2px;
             position: relative;
         }
+
         span::before,
         span::after {
             content: '';
             position: absolute;
         }
+
         span::before {
             bottom: 7px;
         }
+
         span::after {
             top: 7px;
         }
@@ -147,6 +166,7 @@ a {
 }
 
 #main {
+
     //****** hero section ******//
     .hero {
         position: relative;
@@ -156,36 +176,45 @@ a {
         $hero-padding-bottom);
         display: flex;
         justify-content: center;
+
         .hero-text {
             color: #fff;
             text-align: center;
+
             h1 {
                 @include poly-fluid-sizing('font-size',
                 $hero-h1);
             }
+
             p {
                 @include poly-fluid-sizing('font-size',
                 $hero-p);
             }
         }
-    } //****** portfolio section ******//
+    }
+
+    //****** portfolio section ******//
     .portfolio {
         position: relative;
         background: #fff;
         text-align: center;
         padding: 5em 0;
+
         .portfolio-items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
             .portfolio-item {
                 position: relative;
                 overflow: hidden;
                 margin: 5px;
+
                 img {
                     display: block;
                     max-width: 100%;
                 }
+
                 figcaption {
                     position: absolute;
                     top: 100%;
@@ -199,16 +228,20 @@ a {
                     display: flex;
                     flex-direction: column;
                     transition: top ease-in-out 250ms;
+
                     .portfolio-title {
                         @include poly-fluid-sizing('font-size',
                         $port-h2);
                         margin-top: 0;
                         margin-bottom: auto;
+                        letter-spacing: 2px;
                     }
+
                     .portfolio-descr {
                         @include poly-fluid-sizing('font-size',
                         $port-p);
                     }
+
                     .portfolio-link {
                         border-bottom: 2px solid rgb(66, 63, 63);
                         align-self: flex-start;
@@ -220,21 +253,25 @@ a {
                         font-weight: 500;
                     }
                 }
+
                 &:hover figcaption,
                 &:focus figcaption {
                     top: 0;
                 }
             }
+
             .lg-item {
                 figcaption {
                     .portfolio-title {
                         @include poly-fluid-sizing('font-size',
                         $port-h2-lg);
                     }
+
                     .portfolio-descr {
                         @include poly-fluid-sizing('font-size',
                         $port-p-lg);
                     }
+
                     .portfolio-link {
                         @include poly-fluid-sizing('font-size',
                         $port-link-lg);
@@ -250,12 +287,15 @@ a {
     position: relative;
     background: #fff;
     padding: 1em 0;
+
     .container {
         h1 {
             letter-spacing: 0.1em;
         }
+
         width: 90%;
         margin: 0 auto;
+
         &::before {
             content: '';
             display: block;
@@ -264,40 +304,50 @@ a {
             width: 15em;
             margin: 2em auto;
         }
+
         form {
             display: flex;
             flex-direction: column;
+
             @supports (display: grid) {
                 @include media(41.25em) {
                     display: grid;
                     grid-column-gap: 1em;
-                    grid-template-areas: 'name email' 'message message' 'button button';
+                    grid-template-areas: 'name email''message message''button button';
+
                     .name {
                         grid-area: name;
                     }
+
                     .email {
                         grid-area: email;
                     }
+
                     .message {
                         grid-area: message;
+
                         textarea {
                             height: 10em;
                         }
                     }
+
                     .button {
                         grid-area: button;
                     }
                 }
             }
         }
+
         h1 {
             text-align: center;
         }
+
         label {
             display: block;
             margin-top: 1em;
             color: #000;
         }
+
         input,
         textarea {
             display: block;
@@ -307,9 +357,11 @@ a {
             border: 1px solid gray;
             margin-top: 0.3em;
         }
+
         textarea {
             height: 5em;
         }
+
         .button {
             display: inline-block;
             width: auto;
@@ -331,15 +383,18 @@ a {
     background: rgb(83, 88, 99);
     text-align: center;
     color: #CBCBCB;
+
     ul {
         padding: 0;
         list-style: none;
         margin: 1.5em auto 3em;
+
         li {
             display: inline-block;
             background-color: red;
             margin: 0.5em;
             border-radius: 50%;
+
             a {
                 color: black;
                 display: table-cell;
@@ -347,6 +402,7 @@ a {
                 text-decoration: none;
                 height: 2.4em;
                 width: 2.4em;
+
                 &:hover,
                 &:active {
                     color: #CBCBCB;
@@ -355,6 +411,7 @@ a {
             }
         }
     }
+
     .copyright {
         &::before {
             content: '';
@@ -388,6 +445,7 @@ a {
             }
         }
     }
+
     .contact {
         .container {
             width: 80%;
@@ -399,12 +457,15 @@ a {
     #header {
         display: grid;
         grid-template-columns: 1fr auto minmax(32em, 3fr) 1fr;
+
         .logo-link {
             grid-column: 2 / 3;
         }
+
         .nav-toggle-label {
             display: none;
         }
+
         .nav {
             top: 0;
             bottom: 0;
@@ -413,12 +474,15 @@ a {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
             .nav-ul {
                 display: flex;
+
                 li {
                     margin-top: 0;
                     margin-bottom: 0;
                     margin-left: 3em;
+
                     a {
                         opacity: 1;
                         position: relative;
@@ -426,6 +490,7 @@ a {
                 }
             }
         }
+
         .nav a::before {
             content: '';
             display: block;
@@ -438,10 +503,12 @@ a {
             transform: scale(0, 1);
             transition: transform ease-in-out 250ms;
         }
+
         .nav a:hover::before {
             transform: scale(1, 1);
         }
     }
+
     #main {
         .hero {
             .hero-text {
@@ -456,6 +523,7 @@ a {
         .portfolio-items {
             width: 61.875em;
             margin: 0 auto;
+
             .lg-item {
                 figcaption {
                     .portfolio-link {
@@ -465,6 +533,7 @@ a {
             }
         }
     }
+
     .contact {
         .container {
             width: 41.25em;
