@@ -38,8 +38,7 @@ a {
     position: fixed;
     min-width: 100%;
     z-index: 100;
-    // background: #1F2024;
-    background: rgb(83, 88, 99);
+    background-color: #393e41;
     top: 0;
     left: 0;
     right: 0;
@@ -196,7 +195,7 @@ a {
     //****** portfolio section ******//
     .portfolio {
         position: relative;
-        background: #fff;
+        background-color: #f6f7eb;
         text-align: center;
         padding: 5em 0;
 
@@ -208,8 +207,7 @@ a {
             .portfolio-item {
                 position: relative;
                 overflow: hidden;
-                margin: 5px;
-
+                // margin: 5px;
                 img {
                     display: block;
                     max-width: 100%;
@@ -217,23 +215,24 @@ a {
 
                 figcaption {
                     position: absolute;
-                    top: 100%;
+                    top: 120%;
                     bottom: 0;
                     right: 0;
                     left: 0;
-                    padding: 1em;
-                    background: rgba(rgb(211, 196, 196), .7);
+                    // padding-top: 2.1em;
+                    background: rgba(rgb(235, 230, 230), .9);
                     color: #000;
-                    text-align: left;
+                    // text-align: center;
                     display: flex;
                     flex-direction: column;
-                    transition: top ease-in-out 250ms;
+                    justify-content: center;
+                    transition: top ease-in-out .5s;
 
                     .portfolio-title {
                         @include poly-fluid-sizing('font-size',
                         $port-h2);
-                        margin-top: 0;
-                        margin-bottom: auto;
+                        // margin-top: 0;
+                        margin: 0;
                         letter-spacing: 2px;
                     }
 
@@ -243,11 +242,11 @@ a {
                     }
 
                     .portfolio-link {
-                        border-bottom: 2px solid rgb(66, 63, 63);
-                        align-self: flex-start;
+                        border: 4px solid rgb(66, 63, 63);
+                        align-self: center;
                         @include poly-fluid-sizing('font-size',
                         $port-link);
-                        padding-bottom: 2px;
+                        padding: 4px;
                         color: #000;
                         letter-spacing: 1px;
                         font-weight: 500;
@@ -257,25 +256,7 @@ a {
                 &:hover figcaption,
                 &:focus figcaption {
                     top: 0;
-                }
-            }
-
-            .lg-item {
-                figcaption {
-                    .portfolio-title {
-                        @include poly-fluid-sizing('font-size',
-                        $port-h2-lg);
-                    }
-
-                    .portfolio-descr {
-                        @include poly-fluid-sizing('font-size',
-                        $port-p-lg);
-                    }
-
-                    .portfolio-link {
-                        @include poly-fluid-sizing('font-size',
-                        $port-link-lg);
-                    }
+                    // justify-content: center;
                 }
             }
         }
@@ -285,8 +266,8 @@ a {
 //****** contact form ******//
 .contact {
     position: relative;
-    background: #fff;
-    padding: 1em 0;
+    background-color: #ccc7b2;
+    padding: 3em 0;
 
     .container {
         h1 {
@@ -295,15 +276,6 @@ a {
 
         width: 90%;
         margin: 0 auto;
-
-        &::before {
-            content: '';
-            display: block;
-            height: 1px;
-            background: rgba(#201c1c, .25);
-            width: 15em;
-            margin: 2em auto;
-        }
 
         form {
             display: flex;
@@ -380,7 +352,7 @@ a {
 .footer {
     padding: 2em 0;
     position: relative;
-    background: rgb(83, 88, 99);
+    background-color: #393e41;
     text-align: center;
     color: #CBCBCB;
 
@@ -391,7 +363,7 @@ a {
 
         li {
             display: inline-block;
-            background-color: red;
+            background-color: #ff5151;
             margin: 0.5em;
             border-radius: 50%;
 
@@ -434,17 +406,17 @@ a {
 }
 
 @media only screen and (min-width: 41.25em) {
-    .portfolio {
-        .portfolio-items {
-            .lg-item {
-                figcaption {
-                    .portfolio-link {
-                        margin-bottom: 7rem;
-                    }
-                }
-            }
-        }
-    }
+    // .portfolio {
+    //     .portfolio-items {
+    //         .lg-item {
+    //             figcaption {
+    //                 .portfolio-link {
+    //                     margin-bottom: 7rem;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     .contact {
         .container {
@@ -524,13 +496,13 @@ a {
             width: 61.875em;
             margin: 0 auto;
 
-            .lg-item {
-                figcaption {
-                    .portfolio-link {
-                        margin-bottom: 15rem;
-                    }
-                }
-            }
+            // .lg-item {
+            //     figcaption {
+            //         .portfolio-link {
+            //             margin-bottom: 15rem;
+            //         }
+            //     }
+            // }
         }
     }
 
