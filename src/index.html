@@ -1,213 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>pavlos papadopoulos portfolio</title>
-		<meta name="description" content="This is a portfolio page about web developer
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pavlos papadopoulos portfolio</title>
+	<meta name="description" content="This is a portfolio page about web developer
 			pavlos papadopoulos">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
 
-		<!-- Set a default page for your Pinned Site -->
-		<meta name="msapplication-starturl"
-			content="https://www.pavlospapadopoulos.com/index.html?pinned=true">
+	<!-- Set a default page for your Pinned Site -->
+	<meta name="msapplication-starturl"
+		content="https://www.pavlospapadopoulos.com/index.html?pinned=true">
 
-		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-		<script>
-        window.ga = function () {
-                ga.q.push(arguments)
-            };
-            ga.q = [];
-            ga.l = +new Date;
-            ga('create', 'UA-110925255-2', 'auto');
-            ga('send', 'pageview')
-        </script>
-		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-		<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-	</head>
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-110925255-2', 'auto');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async
+		defer></script>
+	<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
 
-	<body id="top">
-		<div class="back-img"></div>
-		<header id="header">
+<body id="top">
+	<div class="back-img"></div>
+	<header id="header">
 
-			<a href="/" class="logo-link">
-				<img src="./img/logo-opt.svg" alt="" class="icon">
-				<div class="name">
-					<div class="name-full">pavlos papadopoulos</div>
-					<div class="name-prof">web developer</div>
-				</div>
-			</a>
+		<a href="/" class="logo-link">
+			<img src="./img/logo-opt.svg" alt="" class="icon">
+			<div class="name">
+				<div class="name-full">pavlos papadopoulos</div>
+				<div class="name-prof">web developer</div>
+			</div>
+		</a>
 
-			<input type="checkbox" id="nav-toggle" class="nav-toggle">
-			<nav class="nav">
-				<ul class="nav-ul">
-					<li>
-						<a href="#top" class="nav-item">home</a>
-					</li>
-					<li>
-						<a href="#portfolio" class="nav-item">projects</a>
-					</li>
-					<li>
-						<a href="#contact" class="nav-item">contact</a>
-					</li>
-				</ul>
-			</nav>
-			<label for="nav-toggle" class="nav-toggle-label">
-				<span></span>
-			</label>
-		</header>
-
-		<main id="main">
-			<section class="hero">
-				<div class="hero-text">
-					<h1 class="item">Web Developer</h1>
-					<p class="item">Building custom-made websites, using the latest
-						technologies</p>
-				</div>
-			</section>
-			<section class="portfolio" id="portfolio">
-				<div class="portfolio-items">
-
-					<figure class="portfolio-item">
-						<picture>
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							<source srcset="./img/fest-seeker-320.jpg" media="(min-width:
-								28.5em)">
-							<source srcset="./img/fest-seeker-260.jpg" media="(min-width:
-								20em)">
-							<!--[if IE 9]></video><![endif]-->
-							<img srcset="./img/fest-seeker-320.jpg" alt="a screen capture
-								of the page">
-						</picture>
-						<figcaption>
-							<h2 class="portfolio-title">Festival seeker</h2>
-							<p class="portfolio-descr">A sample layout</p>
-							<a target="_blank" rel="noopener noreferrer"
-								href="https://fest-seeker.netlify.com/"
-								class="portfolio-link">Visit Page</a>
-						</figcaption>
-					</figure>
-
-					<figure class="portfolio-item">
-						<picture>
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							<source srcset="./img/Pavlos-Papadopoulos-Photography-w320.jpg"
-								media="(min-width: 28.5em)">
-							<source srcset="./img/Pavlos-Papadopoulos-Photography-w260.jpg"
-								media="(min-width: 20em)">
-							<!--[if IE 9]></video><![endif]-->
-							<img srcset="./img/Pavlos-Papadopoulos-Photography-w320.jpg" alt="a
-								screen capture of the page">
-						</picture>
-						<figcaption>
-							<h2 class="portfolio-title">Photography Website</h2>
-							<p class="portfolio-descr">Portfolio page</p>
-							<a target="_blank" rel="noopener noreferrer"
-								href="https://www.pavlospapadopoulos.com/" class="portfolio-link">Visit
-								Page</a>
-						</figcaption>
-					</figure>
-
-					<figure class="portfolio-item">
-						<picture>
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							<source srcset="./img/farm-life-w320.jpg" media="(min-width: 28.5em)">
-							<source srcset="./img/farm-life-w260.jpg" media="(min-width: 20em)">
-							<!--[if IE 9]></video><![endif]-->
-							<img srcset="./img/farm-life-w320.jpg" alt="a screen capture of the
-								page">
-						</picture>
-						<figcaption>
-							<h2 class="portfolio-title">Farm Life</h2>
-							<p class="portfolio-descr">A sample layout</p>
-							<a target="_blank" rel="noopener noreferrer"
-								href="https://farmlife.netlify.com" class="portfolio-link">Visit
-								Page</a>
-						</figcaption>
-					</figure>
-
-					<figure class="portfolio-item">
-						<picture>
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							<source srcset="./img/Wikipedia-Viewer-w320.jpg" media="(min-width:
-								28.5em)">
-							<source srcset="./img/Wikipedia-Viewer-w260.jpg" media="(min-width:
-								20em)">
-							<!--[if IE 9]></video><![endif]-->
-							<img srcset="./img/Wikipedia-Viewer-w320.jpg" alt="a screen capture of
-								the page">
-						</picture>
-						<figcaption>
-							<h2 class="portfolio-title">Wikipedia Viewer</h2>
-							<p class="portfolio-descr">Search for wikipedia articles.</p>
-							<a target="_blank" rel="noopener noreferrer"
-								href="https://pablopap.github.io/Wikipedia-Viewer/"
-								class="portfolio-link">Visit Page</a>
-						</figcaption>
-					</figure>
-
-
-					<!-- next row -->
-					<!-- copy figures from above -->
-				</div>
-			</section>
-			<section class="contact" id="contact">
-				<div class="container">
-					<h1>Contact</h1>
-					<form action="https://formspree.io/pavlospapadopou@gmail.com"
-						method="POST">
-						<label class="name">
-							<span>Name:</span>
-							<input type="text" id="name" name="name" required>
-						</label>
-						<label class="email">
-							Email:
-							<input type="email" id="email" name="_replyto" required>
-						</label>
-						<label class="message">
-							Message:
-							<textarea name="message" id="message" required></textarea>
-						</label>
-						<input type="submit" value="SEND" class="button form-button">
-					</form>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<p>Get in touch</p>
-			<ul>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav class="nav">
+			<ul class="nav-ul">
 				<li>
-					<a target="_blank" rel="noopener noreferrer"
-						href="https://github.com/PabloPap">
-						<i class="icon-social icon-github"></i>
-					</a>
+					<a href="#top" class="nav-item">home</a>
 				</li>
 				<li>
-					<a target="_blank" rel="noopener noreferrer"
-						href="https://linkedin.com/in/papadopoulospavlos">
-						<i class="icon-social icon-linkedin"></i>
-					</a>
+					<a href="#portfolio" class="nav-item">projects</a>
 				</li>
 				<li>
-					<a target="_blank" rel="noopener noreferrer"
-						href="https://twitter.com/pixel_sniffer">
-						<i class="icon-social icon-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a target="_blank" rel="noopener noreferrer"
-						href="mailto:pavlospapadopou@gmail.com">
-						<i class="icon-social icon-mail-alt"></i>
-					</a>
+					<a href="#contact" class="nav-item">contact</a>
 				</li>
 			</ul>
-			<p class="copyright">&copy; Pavlos Papadopoulos 2018</p>
-		</footer>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
+	</header>
 
-		<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-	</body>
+	<main id="main">
+		<section class="hero">
+			<div class="hero-text">
+				<h1 class="item">Web Developer</h1>
+				<p class="item">Building custom-made websites, using the latest
+					technologies</p>
+			</div>
+		</section>
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio-items">
+
+				<figure class="portfolio-item">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="./img/glob-taste-w320.jpg" media="(min-width:50em)">
+						<source srcset="./img/glob-taste-w260.jpg" media="(min-width:20em)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="./img/glob-taste-w320.jpg"
+							alt="a screen capture of the page">
+					</picture>
+					<figcaption>
+						<h2 class="portfolio-title">globTaste</h2>
+						<p class="portfolio-descr">A sample layout</p>
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://glob-taste.netlify.com/"
+							class="portfolio-link">Visit
+							Page</a>
+					</figcaption>
+				</figure>
+
+				<figure class="portfolio-item">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="./img/fest-seeker-320.jpg" media="(min-width:50em)">
+						<source srcset="./img/fest-seeker-260.jpg" media="(min-width:20em)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="./img/fest-seeker-320.jpg" alt="a screen capture
+								of the page">
+					</picture>
+					<figcaption>
+						<h2 class="portfolio-title">Festival seeker</h2>
+						<p class="portfolio-descr">A sample layout</p>
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://fest-seeker.netlify.com/"
+							class="portfolio-link">Visit Page</a>
+					</figcaption>
+				</figure>
+
+				<figure class="portfolio-item">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="./img/Pavlos-Papadopoulos-Photography-w320.jpg"
+							media="(min-width: 50em)">
+						<source srcset="./img/Pavlos-Papadopoulos-Photography-w260.jpg"
+							media="(min-width: 20em)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="./img/Pavlos-Papadopoulos-Photography-w320.jpg" alt="a
+								screen capture of the page">
+					</picture>
+					<figcaption>
+						<h2 class="portfolio-title">Photography Website</h2>
+						<p class="portfolio-descr">Portfolio page</p>
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://www.pavlospapadopoulos.com/"
+							class="portfolio-link">Visit
+							Page</a>
+					</figcaption>
+				</figure>
+
+				<figure class="portfolio-item">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="./img/farm-life-w320.jpg" media="(min-width: 50em)">
+						<source srcset="./img/farm-life-w260.jpg" media="(min-width: 20em)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="./img/farm-life-w320.jpg" alt="a screen capture of the
+								page">
+					</picture>
+					<figcaption>
+						<h2 class="portfolio-title">Farm Life</h2>
+						<p class="portfolio-descr">A sample layout</p>
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://farmlife.netlify.com" class="portfolio-link">Visit
+							Page</a>
+					</figcaption>
+				</figure>
+
+				<figure class="portfolio-item">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="./img/Wikipedia-Viewer-w320.jpg"
+							media="(min-width:50em)">
+						<source srcset="./img/Wikipedia-Viewer-w260.jpg"
+							media="(min-width:20em)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="./img/Wikipedia-Viewer-w320.jpg"
+							alt="a screen capture of the page">
+					</picture>
+					<figcaption>
+						<h2 class="portfolio-title">Wikipedia Viewer</h2>
+						<p class="portfolio-descr">Search for wikipedia articles</p>
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://pablopap.github.io/Wikipedia-Viewer/"
+							class="portfolio-link">Visit Page</a>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<h1>Contact</h1>
+				<form action="https://formspree.io/pavlospapadopou@gmail.com"
+					method="POST">
+					<label class="name">
+						<span>Name:</span>
+						<input type="text" id="name" name="name" required>
+					</label>
+					<label class="email">
+						Email:
+						<input type="email" id="email" name="_replyto" required>
+					</label>
+					<label class="message">
+						Message:
+						<textarea name="message" id="message" required></textarea>
+					</label>
+					<input type="submit" value="SEND" class="button form-button">
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>Get in touch</p>
+		<ul>
+			<li>
+				<a target="_blank" rel="noopener noreferrer"
+					href="https://github.com/PabloPap">
+					<i class="icon-social icon-github"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer"
+					href="https://linkedin.com/in/papadopoulospavlos">
+					<i class="icon-social icon-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer"
+					href="https://twitter.com/pixel_sniffer">
+					<i class="icon-social icon-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener noreferrer"
+					href="mailto:pavlospapadopou@gmail.com">
+					<i class="icon-social icon-mail-alt"></i>
+				</a>
+			</li>
+		</ul>
+		<p class="copyright">&copy; Pavlos Papadopoulos 2018</p>
+	</footer>
+
+	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
 
 </html>
