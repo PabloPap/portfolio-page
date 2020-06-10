@@ -37,7 +37,7 @@
 			<img src="./img/logo-opt.svg" alt="" class="icon">
 			<div class="name">
 				<div class="name-full">pavlos papadopoulos</div>
-				<div class="name-prof">web developer</div>
+				<div class="name-prof">front-end web developer</div>
 			</div>
 		</a>
 
@@ -219,7 +219,7 @@
 				<h1>Contact</h1>
 				<form action="https://formspree.io/pavlospapadopou@gmail.com"
 					method="POST">
-					<label class="name">
+					<!-- <label class="name">
 						<span>Name:</span>
 						<input type="text" id="name" name="name" required>
 					</label>
@@ -231,8 +231,29 @@
 						Message:
 						<textarea name="message" id="message" required></textarea>
 					</label>
-					<input type="submit" value="SEND" class="button form-button">
+					<input type="submit" value="SEND" class="button form-button"> -->
+					<div class="form-group">
+						<input type="text" id="name" name="name" required="required" />
+						<label for="input" class="control-label">Name</label><i
+							class="bar"></i>
+					</div>
+					<div class="form-group">
+						<input type="email" id="email" name="_replyto"
+							required="required" />
+						<label for="input" class="control-label">E-mail</label><i
+							class="bar"></i>
+					</div>
+					<div class="form-group">
+						<textarea name="message" id="message"
+							required="required"></textarea>
+						<label for="textarea" class="control-label">Message</label><i
+							class="bar"></i>
+					</div>
+					<div class="button-container">
+						<button type="submit" class="button"><span>sent</span></button>
+					</div>
 				</form>
+
 			</div>
 		</section>
 	</main>
