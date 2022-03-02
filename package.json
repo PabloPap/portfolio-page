@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "picturefill": "^3.0.2",
-    "url-parse": "^1.4.3",
+    "url-parse": "^1.5.9",
     "zenscroll": "^4.0.2"
   },
   "resolutions": {
